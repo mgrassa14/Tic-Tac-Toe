@@ -1,0 +1,151 @@
+body {
+    /* height: 100vh; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vh;
+}
+.middle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vh;
+    height: 600px;
+    background-color: blue;
+    /* margin-bottom: 5px; */
+}
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+    width: 100vh;
+}
+
+.title {
+    background-color: lightblue;
+    font-size: 50px;
+    /* border: none; */
+}
+
+.players-turn {
+    background-color: lightgreen;
+    font-size: 40px;
+}
+
+.X-side{
+    background-color: lightcoral;
+    align-self: flex-start;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+}
+
+.board { 
+    background-color: yellow;
+    align-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 650px;
+    width: 650px;
+    gap: 0;
+    margin: 0;
+ }
+ .A1{
+    background-color: brown;
+    /* align-self: center; */
+    /* justify-content: flex-start; */
+    height: 200px;
+    width: 200px;
+    margin: 0;
+    border-right: solid black;
+    border-width: 0;
+ }
+.B1{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    margin: 0;
+ } 
+.C1{
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    margin: 0;
+ } 
+ .A2{
+    background-color: orange;
+    align-self: flex-start;
+    /* justify-content: flex-end; */
+    height: 200px;
+    width: 200px;
+    margin: 0;
+    border-right: solid black;
+    border-width: 10px;
+ }
+ .B2{
+    background-color: purple;
+    align-self: flex-start;
+    /* justify-content: flex-end; */
+    height: 200px;
+    width: 200px;
+    margin: 0;
+ }
+ .C2{
+    background-color: teal;
+    align-self: flex-start;
+    /* justify-content: flex-end; */
+    height: 200px;
+    width: 200px;
+    margin: 0;
+ }
+ .A3{
+    background-color: maroon;
+    align-self: flex-start;
+    /* justify-content: flex-end; */
+    height: 200px;
+    width: 200px;
+    margin: 0;
+    border-right: solid black;
+    border-width: 10px;
+ }
+ .B3{
+    background-color: magenta;
+    align-self: flex-start;
+    /* justify-content: flex-end; */
+    height: 200px;
+    width: 200px;
+    margin: 0;
+ }
+ .C3{
+    background-color: indianred;
+    align-self: flex-start;
+    /* justify-content: flex-end; */
+    height: 200px;
+    width: 200px;
+    margin: 0;
+ }
+ .O-side{
+    background-color: pink;
+    align-self: flex-end;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+ }
+
+ .instructions {
+    background-color: lightsalmon;
+    height: 200px;
+
+ }
+
+ /* edit size of img's so that they are not to big on page */
+ /*  elements expand to far when expanding chrome - need to fix eventually */

@@ -3,7 +3,12 @@
 const board = [
     {A1:0, B1:0, C1:0},
     {A2:0, B2:0, C2:0},
-    {A3:0, B3:0, C3:0}
+    {A3:0, B3:0, C3:0},
+    {A1:0, A2:0, A3:0},
+    {B1:0, B2:0, B3:0},
+    {C1:0, C2:0, C3:0},
+    {A1:0, B2:0, C3:0},
+    {C1:0, B2:0, A3:0}
 ]
 // X's = 1
 // O's = -1
@@ -29,13 +34,9 @@ function gamePlay(){
     board[0].A1 = 1
     if (XO === 1){
         XO = -1
-    } else {
-        XO = 1
-    }
-
-    if (player.textContent = "X's Turn"){
         player.textContent = "O's Turn"
     } else {
+        XO = 1
         player.textContent = "X's Turn"
     }
     console.log(board)

@@ -3,6 +3,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* align-content: space-around; */
     /* align-items: center; */
 }
 .top {
@@ -11,22 +12,6 @@ body {
     align-items: center;
     width: 100vh;
 }
-.middle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100vh;
-    height: 600px;
-    background-color: blue;
-    /* margin-bottom: 5px; */
-}
-.bottom {
-    display: flex;
-    flex-direction: column;
-    align-self: end;
-    width: 100vh;
-}
-
 .title {
     background-color: lightblue;
     font-size: 50px;
@@ -36,6 +21,20 @@ body {
 .players-turn {
     background-color: lightgreen;
     font-size: 40px;
+    margin-top: 5px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* align-content: space-around; */
+    width: 100vh;
+    height: 630px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: blue;
+    /* margin-bottom: 5px; */
 }
 
 .X-side{
@@ -43,20 +42,22 @@ body {
     align-self: flex-start;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 10px;
     height: 100%;
     width: 20%;
 }
 
 .board { 
-    background-color: yellow;
-    align-content: flex-start;
+    background-color: black;
+    /* align-content: flex-start; */
     display: flex;
     flex-direction: row;
+    align-content: space-around;
     flex-wrap: wrap;
-    height: 650px;
-    width: 650px;
-    gap: 0;
-    margin: 0;
+    height: 630px;
+    width: 770px;
+    /* gap: 0;
+    margin: 0; */
  }
  .A1{
     background-color: brown;
@@ -64,7 +65,9 @@ body {
     /* justify-content: flex-start; */
     height: 200px;
     width: 200px;
-    margin: 0;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
     border-right: solid black;
     border-width: 0;
  }
@@ -72,13 +75,16 @@ body {
     background-color: blue;
     height: 200px;
     width: 200px;
-    margin: 0;
+    margin-top: 5px;
+    margin-right: 10px;
+    border-width: 0;
  } 
 .C1{
     background-color: green;
     height: 200px;
     width: 200px;
-    margin: 0;
+    margin-top: 5px;
+    border-width: 0;
  } 
  .A2{
     background-color: orange;
@@ -86,9 +92,11 @@ body {
     /* justify-content: flex-end; */
     height: 200px;
     width: 200px;
-    margin: 0;
-    border-right: solid black;
-    border-width: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-width: 0;
+    /* border-right: solid black;
+    border-width: 10px; */
  }
  .B2{
     background-color: purple;
@@ -96,7 +104,8 @@ body {
     /* justify-content: flex-end; */
     height: 200px;
     width: 200px;
-    margin: 0;
+    margin-right: 10;
+    border-width: 0;
  }
  .C2{
     background-color: teal;
@@ -104,7 +113,8 @@ body {
     /* justify-content: flex-end; */
     height: 200px;
     width: 200px;
-    margin: 0;
+    margin-left: 10px;
+    border-width: 0;
  }
  .A3{
     background-color: maroon;
@@ -112,9 +122,12 @@ body {
     /* justify-content: flex-end; */
     height: 200px;
     width: 200px;
-    margin: 0;
-    border-right: solid black;
-    border-width: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border-width: 0;
+    /* border-right: solid black;
+    border-width: 10px; */
  }
  .B3{
     background-color: magenta;
@@ -123,6 +136,7 @@ body {
     height: 200px;
     width: 200px;
     margin: 0;
+    border-width: 0;
  }
  .C3{
     background-color: indianred;
@@ -130,17 +144,25 @@ body {
     /* justify-content: flex-end; */
     height: 200px;
     width: 200px;
-    margin: 0;
+    margin-left: 10px;
+    border-width: 0;
  }
  .O-side{
     background-color: pink;
     align-self: flex-end;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 10px;
     height: 100%;
     width: 20%;
  }
 
+.bottom {
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+    width: 100vh;
+}
  .instructions {
     background-color: lightsalmon;
     height: 200px;

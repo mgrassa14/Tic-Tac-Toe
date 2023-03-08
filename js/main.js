@@ -19,20 +19,28 @@ let moves = 0
 
 let player = document.querySelector('.players-turn');
 let buttons = document.querySelectorAll('.box');
-for(let i = 0; i < buttons.length; i++){
-  buttons[i].addEventListener('click', function(){
-    moves += 1
-    if (XO === 1){
-      XO = -1
-      player.textContent = "O's Turn"
-      buttons[i].innerHTML = '<img src="https://static.vecteezy.com/system/resources/thumbnails/009/344/496/small/x-transparent-free-png.png"/>'
-    } else {
-      XO = 1
-      player.textContent = "X's Turn"
-      buttons[i].innerHTML = '<img src="https://i.imgur.com/mrTYNoE.png"/>'
-    } 
-  },{once : true});
+console.log(buttons)
+
+function gamePlay(){
+  for(let i = 0; i < buttons.length; i++){
+    buttons[i].addEventListener('click', function(){
+      moves += 1
+      console.log(moves,'<< moves update')
+      if (XO === 1){
+        XO = -1
+        player.textContent = "O's Turn"
+        buttons[i].innerHTML = '<img src="https://static.vecteezy.com/system/resources/thumbnails/009/344/496/small/x-transparent-free-png.png"/>'
+      } else {
+        XO = 1
+        player.textContent = "X's Turn"
+        buttons[i].innerHTML = '<img src="https://i.imgur.com/mrTYNoE.png"/>'
+      } 
+
+    },{once : true});
+  }
 }
+
+gamePlay()
 
 let resetEl = document.querySelector('.reset')
 resetEl.addEventListener('click', function(){
@@ -42,6 +50,12 @@ resetEl.addEventListener('click', function(){
   moves = 0
   buttons.forEach(element => element.innerHTML = '')
   player.textContent = "X's Turn"
+  // remove event listeners
+  for(let i = 0; i < buttons.length; i++){
+    buttons[i].removeEventListener('click', function(){})
+  }
+  // gameplay function 
+  gamePlay()
 })
 // buttonA1.addEventListener('click', gamePlay);
 

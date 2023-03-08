@@ -19,13 +19,14 @@ let moves = 0
 
 let player = document.querySelector('.players-turn');
 let buttons = document.querySelectorAll('.box');
-console.log(buttons)
+let classes = document.getElementsById('box').classList.items(0);
+console.log(classes)
 
 function gamePlay(){
   for(let i = 0; i < buttons.length; i++){
     buttons[i].addEventListener('click', function(){
       moves += 1
-      console.log(moves,'<< moves update')
+      // console.log(moves,'<< moves update')
       if (XO === 1){
         XO = -1
         player.textContent = "O's Turn"
@@ -35,7 +36,7 @@ function gamePlay(){
         player.textContent = "X's Turn"
         buttons[i].innerHTML = '<img src="https://i.imgur.com/mrTYNoE.png"/>'
       } 
-
+      console.log(XO,'<< XO')
     },{once : true});
   }
 }

@@ -52,7 +52,7 @@ body {
     /* align-content: flex-start; */
     display: flex;
     flex-direction: row;
-    align-content: space-around;
+    /* align-content: space-around; */
     flex-wrap: wrap;
     height: 630px;
     width: 770px;
@@ -65,25 +65,29 @@ body {
     /* justify-content: flex-start; */
     height: 200px;
     width: 200px;
-    margin-top: 5px;
+    /* margin-top: 5px;
     margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 10px; */
     border-right: solid black;
     border-width: 0;
  }
+ /* img{
+   height: 50px;
+   width: 50px;
+ } */
 .B1{
     background-color: blue;
     height: 200px;
     width: 200px;
-    margin-top: 5px;
-    margin-right: 10px;
+    /* margin-top: 5px;
+    margin-right: 10px; */
     border-width: 0;
  } 
 .C1{
     background-color: green;
     height: 200px;
     width: 200px;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     border-width: 0;
  } 
  .A2{
@@ -92,8 +96,8 @@ body {
     /* justify-content: flex-end; */
     height: 200px;
     width: 200px;
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
     border-width: 0;
     /* border-right: solid black;
     border-width: 10px; */
@@ -104,7 +108,7 @@ body {
     /* justify-content: flex-end; */
     height: 200px;
     width: 200px;
-    margin-right: 10;
+    /* margin-right: 10; */
     border-width: 0;
  }
  .C2{
@@ -113,7 +117,7 @@ body {
     /* justify-content: flex-end; */
     height: 200px;
     width: 200px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     border-width: 0;
  }
  .A3{
@@ -122,9 +126,9 @@ body {
     /* justify-content: flex-end; */
     height: 200px;
     width: 200px;
-    margin-left: 10px;
+    /* margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 5px; */
     border-width: 0;
     /* border-right: solid black;
     border-width: 10px; */
@@ -135,7 +139,7 @@ body {
     /* justify-content: flex-end; */
     height: 200px;
     width: 200px;
-    margin: 0;
+    /* margin: 0; */
     border-width: 0;
  }
  .C3{
@@ -144,7 +148,7 @@ body {
     /* justify-content: flex-end; */
     height: 200px;
     width: 200px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     border-width: 0;
  }
  .O-side{

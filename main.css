@@ -3,7 +3,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* align-content: space-around; */
+    align-content: center;
     align-items: center;
 }
 .top {
@@ -31,7 +31,7 @@ body {
     /* align-items: center; */
     /* align-content: space-around; */
     width: 100vh;
-    height: 630px;
+    height: 650px;
     margin-top: 15px;
     margin-bottom: 10px;
     background-color: blue;
@@ -39,13 +39,19 @@ body {
 }
 
 .X-side{
+    display:flex;
+    flex-direction: column;
     background-color: lightcoral;
-    align-self: flex-start;
-    justify-content: flex-end;
-    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
     margin-right: 10px;
     height: 100%;
-    width: 20%;
+    width: 165px;
+}
+.piecesX {
+   align-self: center;
+   font-size: x-large;
 }
 
 .board { 
@@ -55,8 +61,8 @@ body {
     flex-direction: row;
     /* align-content: space-around; */
     flex-wrap: wrap;
-    height: 630px;
-    width: 770px;
+    height: 650px;
+    width: 650px;
     cursor: not-allowed;
     /* gap: 0;
     margin: 0; */
@@ -67,9 +73,9 @@ body {
     /* justify-content: flex-start; */
     height: 200px;
     width: 200px;
-    /* margin-top: 5px;
+    margin-top: 10px;
     margin-right: 10px;
-    margin-left: 10px; */
+    margin-left: 10px;
     border-right: solid black;
     border-width: 0;
  }
@@ -81,36 +87,33 @@ body {
     background-color: blue;
     height: 200px;
     width: 200px;
-    /* margin-top: 5px;
-    margin-right: 10px; */
+    margin-top: 10px;
+    margin-right: 10px;
     border-width: 0;
  } 
 .C1{
     background-color: green;
     height: 200px;
     width: 200px;
-    /* margin-top: 5px; */
+    margin-top: 10px;
+    /* margin-right: 10px; */
     border-width: 0;
  } 
  .A2{
     background-color: orange;
     align-self: flex-start;
-    /* justify-content: flex-end; */
     height: 200px;
     width: 200px;
-    /* margin-left: 10px;
-    margin-right: 10px; */
+    margin-right: 10px;
+    margin-left: 10px;
     border-width: 0;
-    /* border-right: solid black;
-    border-width: 10px; */
  }
  .B2{
     background-color: purple;
     align-self: flex-start;
-    /* justify-content: flex-end; */
     height: 200px;
     width: 200px;
-    /* margin-right: 10; */
+    margin-right: 10px;
     border-width: 0;
  }
  .C2{
@@ -125,12 +128,10 @@ body {
  .A3{
     background-color: maroon;
     align-self: flex-start;
-    /* justify-content: flex-end; */
     height: 200px;
     width: 200px;
-    /* margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 5px; */
+    margin-left: 10px;
     border-width: 0;
     /* border-right: solid black;
     border-width: 10px; */
@@ -141,7 +142,7 @@ body {
     /* justify-content: flex-end; */
     height: 200px;
     width: 200px;
-    /* margin: 0; */
+    margin-right: 10px;
     border-width: 0;
  }
  .C3{
@@ -154,13 +155,27 @@ body {
     border-width: 0;
  }
  .O-side{
+   display: flex;
     background-color: pink;
-    align-self: flex-end;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;
     margin-left: 10px;
     height: 100%;
-    width: 20%;
+    width: 165px;
+ }
+
+ .piecesO{
+   align-self: center;
+   font-size: x-large;
+   /* margin-bottom: 40px; */
+   margin-top: 204px;
+  
+ }
+ #o-img {
+   height: fit-content;
+   width:fit-content;
+   align-self: center;
+   padding-top: 50px;
+   /* margin-top: 10px; */
  }
 
 .bottom {
@@ -171,9 +186,16 @@ body {
 }
  .instructions {
     background-color: lightsalmon;
-    height: 200px;
-
+    height: 170px;
+    width: 700px;
+    margin-right: 60px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
  }
-
- /* edit size of img's so that they are not to big on page */
- /*  elements expand to far when expanding chrome - need to fix eventually */
+ .reset{
+   font-size: xx-large;
+   height: 60px;
+   width: auto;
+   border-radius: 10px;
+ }

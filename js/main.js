@@ -41,6 +41,9 @@ function gamePlay(e){
     console.log('returning')
     return 
   }
+  if (player.textContent === "X Wins!" || player.textContent === "O Wins!"){
+    return
+  } 
   
   // console.log(document.getElementsByClassName('piecesX'),'<<<<')
   let key = e.target.className.split(' ')[0]
@@ -82,9 +85,9 @@ function getWinner(){
   // console.log(board, '>>>')
   // console.log(board.A1)
   console.log(player.textContent)
-  if (player.textContent === "X Wins!" || player.textContent === "O Wins!"){
-    return
-  } 
+  // if (player.textContent === "X Wins!" || player.textContent === "O Wins!"){
+  //   return
+  // } 
   if ((board.A1 + board.A2 + board.A3) === -3 || (board.B1 + board.B2 + board.B3) === -3 || (board.C1 + board.C2 + board.C3) === -3 || (board.A1 + board.B1 + board.C1) === -3 || (board.A2 + board.B2 + board.C2) === -3 || (board.A3 + board.B3 + board.C3) === -3 || (board.A1 + board.B2 + board.C3) === -3 || (board.C1 + board.B2 + board.A3) === -3){
     player.textContent = "X Wins!"
     // e.target.style.background-color(red); 
@@ -96,7 +99,7 @@ function getWinner(){
   } else if (moves === 9 && ((board.A1 + board.A2 + board.A3) < 3 || (board.B1 + board.B2 + board.B3) < 3 || (board.C1 + board.C2 + board.C3) < 3 || (board.A1 + board.B1 + board.C1) < 3 || (board.A2 + board.B2 + board.C2) < 3 || (board.A3 + board.B3 + board.C3) < 3 || (board.A1 + board.B2 + board.C3) < 3 || (board.C1 + board.B2 + board.A3) < 3)){
     player.textContent = "Cats Game!"
   }
-  
+
 }
 
 

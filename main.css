@@ -4,7 +4,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     /* align-content: space-around; */
-    /* align-items: center; */
+    align-items: center;
 }
 .top {
     display: flex;
@@ -27,6 +27,7 @@ body {
 .middle {
     display: flex;
     flex-direction: row;
+    /* align-items: center; */
     /* align-items: center; */
     /* align-content: space-around; */
     width: 100vh;
@@ -56,6 +57,7 @@ body {
     flex-wrap: wrap;
     height: 630px;
     width: 770px;
+    cursor: not-allowed;
     /* gap: 0;
     margin: 0; */
  }

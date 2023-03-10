@@ -48,6 +48,8 @@ To get started playing Tic-Tac-Toe, click on this link:
 
 <https://mgrassa14.github.io/Tic-Tac-Toe/>
 
+Setring you browser at fullscreen would be optimal.
+
 The game also shows a list of the instructions of the game if there is any confusion.
 
 ## Next Steps

@@ -1,6 +1,6 @@
 ## Tic-Tac-Toe!
 
-The came Tic-tac-toe has entertained people going as far back as ancient Egypt to the medieval cathedrals of England. 
+The game Tic-tac-toe has entertained people going as far back as ancient Egypt to the medieval cathedrals of England. 
 
 This game consists of a three by three grid in which two players must place their designated piece into the empty spaces of the board.
 
@@ -47,4 +47,4 @@ To get started playing Tic-Tac-Toe, click on this link:
 
 The game also shows a list of the instructions of the game if there is any confusion.
 
-Enjoy entertaining yourselves!.
+Enjoy entertaining yourselves!

@@ -48,7 +48,7 @@ To get started playing Tic-Tac-Toe, click on this link:
 
 <https://mgrassa14.github.io/Tic-Tac-Toe/>
 
-Setring you browser at fullscreen would be optimal.
+Setring you browser at fullscreen on a desktop or laptop would be optimal.
 
 The game also shows a list of the instructions of the game if there is any confusion.
 
@@ -58,3 +58,4 @@ As great as this game is, I know that there can be further inprovements:
 
 * Get the winner more effitiently
 * The boxes with the 3 pieces in a row should be the only boxes to  change color 
+* Make it user friendly for phones or smaller devices

@@ -50,4 +50,9 @@ To get started playing Tic-Tac-Toe, click on this link:
 
 The game also shows a list of the instructions of the game if there is any confusion.
 
-Enjoy entertaining yourselves!
+## Next Steps
+
+As great as this game is, I know that there can be further inprovements:
+
+* Get the winner more effitiently
+* The boxes with the 3 pieces in a row should be the only boxes to  change color 

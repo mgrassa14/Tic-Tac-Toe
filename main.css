@@ -1,174 +1,190 @@
 body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
 }
+
 .top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100vw;
 }
+
 .title {
-    /* background-color: lightblue; */
-    font-size: 50px;
+   /* background-color: lightblue; */
+   font-size: 50px;
 }
 
 .players-turn {
-    /* background-color: lightgreen; */
-    font-size: 40px;
-    margin-top: 5px;
+   /* background-color: lightgreen; */
+   font-size: 40px;
+   margin-top: 5px;
 }
 
 .middle {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 650px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    justify-content: center;
-    /* background-color: blue; */
+   display: flex;
+   flex-direction: row;
+   width: 100vw;
+   height: 650px;
+   margin-top: 15px;
+   margin-bottom: 10px;
+   justify-content: center;
+   /* background-color: blue; */
 }
 
 .X-side{
-    display:flex;
-    flex-direction: column;
-    /* background-color: lightcoral; */
-    align-content: center;
-    justify-content: center;
-    align-self: center;
-    margin-right: 10px;
-    height: 100%;
-    width: 165px;
+   display:flex;
+   flex-direction: column;
+   /* background-color: lightcoral; */
+   align-content: center;
+   justify-content: center;
+   align-self: center;
+   margin-right: 10px;
+   height: 100%;
+   width: 165px;
 }
+
 .piecesX {
    align-self: center;
    font-size: x-large;
 }
 
 .board { 
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 650px;
-    width: 643px;
-    cursor: not-allowed;
- }
- .A1{
-    /* background-color: brown; */
-    height: 200px;
-    width: 200px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-    border-right: solid black;
- }
-.B1{
-    /* background-color: blue; */
-    height: 200px;
-    width: 200px;
-    margin-top: 10px;
-    margin-right: 10px;
-    border-width: 0;
- } 
-.C1{
-    /* background-color: green; */
-    height: 200px;
-    width: 200px;
-    margin-top: 10px;
-    border-width: 0;
- } 
- .A2{
-    /* background-color: orange; */
-    align-self: flex-start;
-    height: 200px;
-    width: 200px;
-    margin-right: 10px;
-    margin-left: 10px;
-    border-width: 0;
- }
- .B2{
-    /* background-color: purple; */
-    align-self: flex-start;
-    height: 200px;
-    width: 200px;
-    margin-right: 10px;
-    border-width: 0;
- }
- .C2{
-    /* background-color: teal; */
-    align-self: flex-start;
-    height: 200px;
-    width: 200px;
-    border-width: 0;
- }
- .A3{
-    /* background-color: maroon; */
-    align-self: flex-start;
-    height: 200px;
-    width: 200px;
-    margin-right: 10px;
-    margin-left: 10px;
-    border-width: 0;
- }
- .B3{
-    /* background-color: magenta; */
-    align-self: flex-start;
-    height: 200px;
-    width: 200px;
-    margin-right: 10px;
-    border-width: 0;
- }
- .C3{
-    /* background-color: indianred; */
-    align-self: flex-start;
-    height: 200px;
-    width: 200px;
-    border-width: 0;
- }
- .O-side{
+   background-color: black;
    display: flex;
-    /* background-color: pink; */
-    flex-direction: column;
-    margin-left: 10px;
-    height: 100%;
-    width: 165px;
- }
+   flex-direction: row;
+   flex-wrap: wrap;
+   height: 650px;
+   width: 643px;
+   cursor: not-allowed;
+}
 
- .piecesO{
+.A1{
+   /* background-color: brown; */
+   height: 200px;
+   width: 200px;
+   margin-top: 10px;
+   margin-right: 10px;
+   margin-left: 10px;
+   border-right: solid black;
+}
+
+.B1{
+   /* background-color: blue; */
+   height: 200px;
+   width: 200px;
+   margin-top: 10px;
+   margin-right: 10px;
+   border-width: 0;
+} 
+
+ .C1{
+   /* background-color: green; */
+   height: 200px;
+   width: 200px;
+   margin-top: 10px;
+   border-width: 0;
+} 
+
+.A2{
+   /* background-color: orange; */
+   align-self: flex-start;
+   height: 200px;
+   width: 200px;
+   margin-right: 10px;
+   margin-left: 10px;
+   border-width: 0;
+}
+
+.B2{
+   /* background-color: purple; */
+   align-self: flex-start;
+   height: 200px;
+   width: 200px;
+   margin-right: 10px;
+   border-width: 0;
+}
+
+.C2{
+   /* background-color: teal; */
+   align-self: flex-start;
+   height: 200px;
+   width: 200px;
+   border-width: 0;
+}
+
+.A3{
+   /* background-color: maroon; */
+   align-self: flex-start;
+   height: 200px;
+   width: 200px;
+   margin-right: 10px;
+   margin-left: 10px;
+   border-width: 0;
+}
+
+.B3{
+   /* background-color: magenta; */
+   align-self: flex-start;
+   height: 200px;
+   width: 200px;
+   margin-right: 10px;
+   border-width: 0;
+}
+
+.C3{
+   /* background-color: indianred; */
+   align-self: flex-start;
+   height: 200px;
+   width: 200px;
+   border-width: 0;
+}
+
+.O-side{
+   display: flex;
+   /* background-color: pink; */
+   flex-direction: column;
+   margin-left: 10px;
+   height: 100%;
+   width: 165px;
+}
+
+.piecesO{
    align-self: center;
    font-size: x-large;
    margin-top: 230px;
- }
- #o-img {
+}
+
+#o-img {
    height: fit-content;
    width:fit-content;
    align-self: center;
    padding-top: 50px;
- }
+}
 
 .bottom {
-    display: flex;
-    flex-direction: row;
-    align-self: start;
-    width: 100vh;
+   display: flex;
+   flex-direction: row;
+   align-self: start;
+   width: 100vh;
 }
- .instructions {
-    background-color: lightgrey;
-    height: 170px;
-    width: 700px;
-    margin-right: 60px;
-    border-radius: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: medium;
- }
- .reset{
+
+.instructions {
+   background-color: lightgrey;
+   height: 170px;
+   width: 700px;
+   margin-right: 60px;
+   border-radius: 5px;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: medium;
+}
+
+.reset{
    font-size: xx-large;
    height: 60px;
    width: auto;
    border-radius: 10px;
- }
+}

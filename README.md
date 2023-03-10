@@ -10,6 +10,9 @@ The player to do this first is the winner!
 
 ## Screenshots
 
+This is the link to my wireframe: 
+<https://drive.google.com/file/d/1xvvTo8PHDfHX6fl977oJIPq6V1b4s5bt/view?usp=sharing>
+
 I went with a clean and minimalistic user experience.
 
 When loading the game, it will first look like the following:

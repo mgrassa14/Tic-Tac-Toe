@@ -1,5 +1,4 @@
 body {
-    /* height: 100vh; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -10,16 +9,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vh;
+    width: 100vw;
 }
 .title {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     font-size: 50px;
-    /* border: none; */
 }
 
 .players-turn {
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     font-size: 40px;
     margin-top: 5px;
 }
@@ -27,21 +25,18 @@ body {
 .middle {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
-    /* align-items: center; */
-    /* align-content: space-around; */
-    width: 100vh;
+    width: 100vw;
     height: 650px;
     margin-top: 15px;
     margin-bottom: 10px;
-    background-color: blue;
-    /* margin-bottom: 5px; */
+    justify-content: center;
+    /* background-color: blue; */
 }
 
 .X-side{
     display:flex;
     flex-direction: column;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     align-content: center;
     justify-content: center;
     align-self: center;
@@ -56,35 +51,24 @@ body {
 
 .board { 
     background-color: black;
-    /* align-content: flex-start; */
     display: flex;
     flex-direction: row;
-    /* align-content: space-around; */
     flex-wrap: wrap;
     height: 650px;
-    width: 650px;
+    width: 643px;
     cursor: not-allowed;
-    /* gap: 0;
-    margin: 0; */
  }
  .A1{
-    background-color: brown;
-    /* align-self: center; */
-    /* justify-content: flex-start; */
+    /* background-color: brown; */
     height: 200px;
     width: 200px;
     margin-top: 10px;
     margin-right: 10px;
     margin-left: 10px;
     border-right: solid black;
-    border-width: 0;
  }
- /* img{
-   height: 50px;
-   width: 50px;
- } */
 .B1{
-    background-color: blue;
+    /* background-color: blue; */
     height: 200px;
     width: 200px;
     margin-top: 10px;
@@ -92,15 +76,14 @@ body {
     border-width: 0;
  } 
 .C1{
-    background-color: green;
+    /* background-color: green; */
     height: 200px;
     width: 200px;
     margin-top: 10px;
-    /* margin-right: 10px; */
     border-width: 0;
  } 
  .A2{
-    background-color: orange;
+    /* background-color: orange; */
     align-self: flex-start;
     height: 200px;
     width: 200px;
@@ -109,7 +92,7 @@ body {
     border-width: 0;
  }
  .B2{
-    background-color: purple;
+    /* background-color: purple; */
     align-self: flex-start;
     height: 200px;
     width: 200px;
@@ -117,46 +100,39 @@ body {
     border-width: 0;
  }
  .C2{
-    background-color: teal;
+    /* background-color: teal; */
     align-self: flex-start;
-    /* justify-content: flex-end; */
     height: 200px;
     width: 200px;
-    /* margin-left: 10px; */
     border-width: 0;
  }
  .A3{
-    background-color: maroon;
+    /* background-color: maroon; */
     align-self: flex-start;
     height: 200px;
     width: 200px;
     margin-right: 10px;
     margin-left: 10px;
     border-width: 0;
-    /* border-right: solid black;
-    border-width: 10px; */
  }
  .B3{
-    background-color: magenta;
+    /* background-color: magenta; */
     align-self: flex-start;
-    /* justify-content: flex-end; */
     height: 200px;
     width: 200px;
     margin-right: 10px;
     border-width: 0;
  }
  .C3{
-    background-color: indianred;
+    /* background-color: indianred; */
     align-self: flex-start;
-    /* justify-content: flex-end; */
     height: 200px;
     width: 200px;
-    /* margin-left: 10px; */
     border-width: 0;
  }
  .O-side{
    display: flex;
-    background-color: pink;
+    /* background-color: pink; */
     flex-direction: column;
     margin-left: 10px;
     height: 100%;
@@ -166,16 +142,13 @@ body {
  .piecesO{
    align-self: center;
    font-size: x-large;
-   /* margin-bottom: 40px; */
-   margin-top: 204px;
-  
+   margin-top: 230px;
  }
  #o-img {
    height: fit-content;
    width:fit-content;
    align-self: center;
    padding-top: 50px;
-   /* margin-top: 10px; */
  }
 
 .bottom {
@@ -185,7 +158,7 @@ body {
     width: 100vh;
 }
  .instructions {
-    background-color: lightsalmon;
+    background-color: lightgrey;
     height: 170px;
     width: 700px;
     margin-right: 60px;
